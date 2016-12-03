@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>E-loan</title>
+		<link href="css/mine.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.2-dist/css/bootstrap.css" />
+		<script src="js/jquery/jquery-2.1.3.js"></script>
+		<script src="js/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+		<script src="js/mine.js"></script>
+	</head>
+
+	<body>
+		<header id="header" class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#xxx">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<span class="glyphicon glyphicon-phone-alt"></span>
+						<i>028-86261949</i>
+					</a>
+				</div>
+				<div class="navbar-collapse collapse" id="xxx">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">skyline</a>
+						</li>
+						<li>
+							<a href="#">赶快充值</a>
+						</li>
+						<li>
+							<a href="#">注销</a>
+						</li>
+						<li>
+							<a href="#">帮助</a>
+						</li>
+						<li>
+							<a href="#">联系客服</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="navbar navbar-default" id="banner_nav">
+			<div class="nav navbar-header"><img src="img/logo.png" /></div>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">我要投资</a>
+				</li>
+				<li>
+					<a href="#">我要借款</a>
+				</li>
+				<li>
+					<a href="#">个人中心</a>
+				</li>
+				<li>
+					<a href="#">新手指引</a>
+				</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+		<!-- banner广告部分 start -->
+		<div class="container-fuil" id="banner-slider">
+			<div id="carousel-banner-generi" class="carousel slide el-banner" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-banner-generi" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-banner-generi" data-slide-to="1"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/banner01.jpg" alt="...">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="item">
+						<img src="img/banner02.jpg" alt="...">
+						<div class="carousel-caption"></div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-banner-generi" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-banner-generi" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!--banner结束-->
+		<div class=" container " id="three-list">
+			<div class="row">
+				<ul class="media-list  col-md-4">
+					<li class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/feature01.png" />
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">投资理财</h4>
+							<p class="media-right">稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="media-list  col-md-4">
+					<li class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/feature02.png" />
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">投资理财</h4>
+							<p class="media-right">稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="media-list  col-md-4">
+					<li class="media">
+						<div class="media-left">
+							<img class="media-object" src="img/feature03.png" />
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">投资理财</h4>
+							<p class="media-right">稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--面板开始-->
+		<div class="panel container" id="panel">
+
+			<div class="panel-heading">
+				<span class="bigf">进行中借款</span>
+				<span class="pull-right"><a href="#">进入投资列表</a></span>
+			</div>
+			<!-- Table -->
+			<table class="table">
+				<table class="table el-table table-hover">
+					<thead>
+						<tr>
+							<th>借款人</th>
+							<th>借款标题</th>
+							<th>年利率</th>
+							<th>金额</th>
+							<th>还款方式</th>
+							<th>进度</th>
+							<th width="80px">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--后台示例数据-->
+						<tr>
+							<!--第一条数据开始-->
+							<td>张三</td>
+							<td>给我2000度过难关</td>
+							<td class="text-info"> 10.00%
+							</td>
+							<td class="text-info">2,000.00</td>
+							<td>
+								按月分期还款
+							</td>
+							<td>
+								<div class="">
+									78.00%
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-danger btn-sm" href="borrow_info.html?id=1">查看</a>
+							</td>
+						</tr>
+						<!--第一条数据结束-->
+						<tr>
+							<!--第二条数据开始-->
+							<td>王五</td>
+							<td>江湖救急，借100吃饭</td>
+							<td class="text-info"> 12.00%
+							</td>
+							<td class="text-info">100.00</td>
+							<td>
+								按月到期还款
+							</td>
+							<td>
+								<div class="">
+									100.00%
+								</div>
+							</td>
+							<td>
+								<a class="btn btn-danger btn-sm" href="borrow_info.html?id=1">查看</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+
+		<!--4面板开始-->
+		<div class="panel container delbor">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel-heading">
+						<span class="bigf">企业最新资讯</span>
+						<span class="pull-right"><a href="#">更多资讯</a></span>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="###">
+								<span class="pull-left">央视力挺互联网金融</span>
+								<span class="pull-right">发表日期：2015-03-23</span>
+								<span class="clearfix"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="###">
+								<span class="pull-left">央视力挺互联网金融</span>
+								<span class="pull-right">发表日期：2015-03-23</span>
+								<span class="clearfix"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="###">
+								<span class="pull-left">央视力挺互联网金融</span>
+								<span class="pull-right">发表日期：2015-03-23</span>
+								<span class="clearfix"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<div class="panel-heading">
+						<span class="bigf">企业最新资讯</span>
+						<span class="pull-right"><a href="#">更多资讯</a></span>
+					</div>
+					<ul class="list-group">
+						<li class="list-group-item">
+							<a href="###">
+								<span class="pull-left">央视力挺互联网金融</span>
+								<span class="pull-right">发表日期：2015-03-23</span>
+								<span class="clearfix"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="###">
+								<span class="pull-left">央视力挺互联网金融</span>
+								<span class="pull-right">发表日期：2015-03-23</span>
+								<span class="clearfix"></span>
+							</a>
+						</li>
+						<li class="list-group-item">
+							<a href="###">
+								<span class="pull-left">央视力挺互联网金融</span>
+								<span class="pull-right">发表日期：2015-03-23</span>
+								<span class="clearfix"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel-heading">
+							<span class="bigf">企业最新资讯</span>
+							<span class="pull-right"><a href="#">更多资讯</a></span>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<a href="###">
+									<span class="pull-left">央视力挺互联网金融</span>
+									<span class="pull-right">发表日期：2015-03-23</span>
+									<span class="clearfix"></span>
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="###">
+									<span class="pull-left">央视力挺互联网金融</span>
+									<span class="pull-right">发表日期：2015-03-23</span>
+									<span class="clearfix"></span>
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="###">
+									<span class="pull-left">央视力挺互联网金融</span>
+									<span class="pull-right">发表日期：2015-03-23</span>
+									<span class="clearfix"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div class="panel-heading">
+							<span class="bigf">企业最新资讯</span>
+							<span class="pull-right"><a href="#">更多资讯</a></span>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item">
+								<a href="###">
+									<span class="pull-left">央视力挺互联网金融</span>
+									<span class="pull-right">发表日期：2015-03-23</span>
+									<span class="clearfix"></span>
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="###">
+									<span class="pull-left">央视力挺互联网金融</span>
+									<span class="pull-right">发表日期：2015-03-23</span>
+									<span class="clearfix"></span>
+								</a>
+							</li>
+							<li class="list-group-item">
+								<a href="###">
+									<span class="pull-left">央视力挺互联网金融</span>
+									<span class="pull-right">发表日期：2015-03-23</span>
+									<span class="clearfix"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--底部链接内容-->
+				<div class="row el-footer">
+					<div class="container">
+						<div class="col-md-8">
+							<p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+							<p>版权所有：&emsp;2006-2015成都源代码教育咨询有限公司</p>
+							<p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+							<p>电&emsp;&emsp;话：&emsp;028-86261949&nbsp; / 400-808-6840&emsp; 邮箱：&emsp;yuandaima@itsource.cn
+							</p>
+							<p>
+								<a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>&emsp;&emsp;
+								<a href="http://www.gaj.chengdu.gov.cn">蜀公网安备510114990541</a>
+							</p>
+							<div style="display: inline-block; overflow: hidden; float: left;"></div>
+						</div>
+						<div class="col-md-2">
+							<div>
+								<p style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微博：</p>
+								<a href="http://t.qq.com/it-source" target="_blank"> <img src="img/tecent.png" alt="Responsive image">
+								</a>
+								<a href="http://weibo.com/cditcast" target="_blank"> <img src="img/sina.png" alt="Responsive image">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div>
+								<p style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微信：</p>
+								<img src="img/wx.jpg" alt="Responsive image" class="img-responsive">
+							</div>
+						</div>
+					</div>
+				</div>
+
+	</body>
+
+</html>
